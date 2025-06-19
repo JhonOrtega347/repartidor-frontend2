@@ -16,7 +16,14 @@
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.misteriorpm.qrlocationapp",
+      "usesCleartextTraffic": true,
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCVMymwvs3joUzFUxf0lyny-HRkerLeCNE"
+        }
+      }
     },
     "web": {
       "bundler": "metro",
@@ -37,6 +44,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "502d7ec4-186e-4c4c-a0a5-d4402599628f"
+      }
     }
   }
 }

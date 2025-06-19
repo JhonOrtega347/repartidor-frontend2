@@ -23,7 +23,7 @@ export default function App() {
   // Configurar WebSocket con SockJS
   useEffect(() => {
     const client = new Client({
-      webSocketFactory: () => new SockJS('http://192.168.18.11:8080/ws-location'), // Asegúrate que este endpoint esté habilitado con SockJS en el backend
+      webSocketFactory: () => new SockJS('http://3.225.73.109:8080/ws-location'), // Asegúrate que este endpoint esté habilitado con SockJS en el backend
       onConnect: () => {
         console.log('Conectado al WebSocket');
         client.subscribe('/topic/locations', (message) => {
